@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEAF1D4E17776D79008965A7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAF1D4D17776D79008965A7 /* Cocoa.framework */; };
+		BEAF1D5817776D79008965A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEAF1D5617776D79008965A7 /* InfoPlist.strings */; };
+		BEAF1D5A17776D79008965A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF1D5917776D79008965A7 /* main.m */; };
+		BEAF1D5E17776D79008965A7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BEAF1D5C17776D79008965A7 /* Credits.rtf */; };
+		BEAF1D6117776D79008965A7 /* TheMissingRadiusDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF1D6017776D79008965A7 /* TheMissingRadiusDelegate.m */; };
+		BEAF1D6417776D79008965A7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEAF1D6217776D79008965A7 /* MainMenu.xib */; };
+		BEAF1D6C1777A5C4008965A7 /* TheMissingRadiusController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF1D6B1777A5C4008965A7 /* TheMissingRadiusController.m */; };
+		BEAF1D701777A70D008965A7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAF1D6F1777A70D008965A7 /* Security.framework */; };
+		BEAF1D721777A723008965A7 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAF1D711777A723008965A7 /* ServiceManagement.framework */; };
+		BECF5FDE178DE89700712D96 /* TheMissingRadiusHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BECF5FDD178DE89700712D96 /* TheMissingRadiusHelper.m */; };
+		BEF8F45D1785A971003D9BA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF8F43C17853426003D9BA7 /* Foundation.framework */; };
+		BEF8F4601785A971003D9BA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF8F45F1785A971003D9BA7 /* main.m */; };
+		BEF8F4691785AD34003D9BA7 /* com.aapps.TheMissingRadiusHelper in CopyFiles */ = {isa = PBXBuildFile; fileRef = BEF8F45C1785A971003D9BA7 /* com.aapps.TheMissingRadiusHelper */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BECF5FE1178DFC7C00712D96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEAF1D4217776D79008965A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF8F45B1785A971003D9BA7;
+			remoteInfo = TheMissingRadiusHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BEAF1D821778B74A008965A7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				BEF8F4691785AD34003D9BA7 /* com.aapps.TheMissingRadiusHelper in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF8F45A1785A971003D9BA7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BEAF1D4A17776D79008965A7 /* The Missing Radius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Missing Radius.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAF1D4D17776D79008965A7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BEAF1D5017776D79008965A7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BEAF1D5117776D79008965A7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BEAF1D5217776D79008965A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BEAF1D5517776D79008965A7 /* The Missing Radius-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "The Missing Radius-Info.plist"; sourceTree = "<group>"; };
+		BEAF1D5717776D79008965A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BEAF1D5917776D79008965A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEAF1D5B17776D79008965A7 /* The Missing Radius-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "The Missing Radius-Prefix.pch"; sourceTree = "<group>"; };
+		BEAF1D5D17776D79008965A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BEAF1D5F17776D79008965A7 /* TheMissingRadiusDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMissingRadiusDelegate.h; sourceTree = "<group>"; };
+		BEAF1D6017776D79008965A7 /* TheMissingRadiusDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMissingRadiusDelegate.m; sourceTree = "<group>"; };
+		BEAF1D6317776D79008965A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BEAF1D6A1777A5C4008965A7 /* TheMissingRadiusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheMissingRadiusController.h; sourceTree = "<group>"; };
+		BEAF1D6B1777A5C4008965A7 /* TheMissingRadiusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheMissingRadiusController.m; sourceTree = "<group>"; };
+		BEAF1D6F1777A70D008965A7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		BEAF1D711777A723008965A7 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		BEAF1D801778B0F7008965A7 /* TheMissingRadiusHelper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TheMissingRadiusHelper-Info.plist"; sourceTree = "<group>"; };
+		BEAF1D811778B0F7008965A7 /* TheMissingRadiusHelper-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TheMissingRadiusHelper-Launchd.plist"; sourceTree = "<group>"; };
+		BECF5FDC178DE89700712D96 /* TheMissingRadiusHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheMissingRadiusHelper.h; sourceTree = "<group>"; };
+		BECF5FDD178DE89700712D96 /* TheMissingRadiusHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheMissingRadiusHelper.m; sourceTree = "<group>"; };
+		BECF5FDF178DE8B200712D96 /* Interfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interfaces.h; sourceTree = "<group>"; };
+		BEF8F43C17853426003D9BA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BEF8F45C1785A971003D9BA7 /* com.aapps.TheMissingRadiusHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.aapps.TheMissingRadiusHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF8F45F1785A971003D9BA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEF8F4621785A971003D9BA7 /* TheMissingRadiusHelper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TheMissingRadiusHelper-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEAF1D4717776D79008965A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAF1D721777A723008965A7 /* ServiceManagement.framework in Frameworks */,
+				BEAF1D4E17776D79008965A7 /* Cocoa.framework in Frameworks */,
+				BEAF1D701777A70D008965A7 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF8F4591785A971003D9BA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF8F45D1785A971003D9BA7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEAF1D4117776D79008965A7 = {
+			isa = PBXGroup;
+			children = (
+				BECF5FE0178DE8F300712D96 /* Shared Sources */,
+				BEF8F45E1785A971003D9BA7 /* TheMissingRadiusHelper */,
+				BEAF1D5317776D79008965A7 /* The Missing Radius */,
+				BEAF1D4C17776D79008965A7 /* Frameworks */,
+				BEAF1D4B17776D79008965A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEAF1D4B17776D79008965A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEAF1D4A17776D79008965A7 /* The Missing Radius.app */,
+				BEF8F45C1785A971003D9BA7 /* com.aapps.TheMissingRadiusHelper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEAF1D4C17776D79008965A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEAF1D711777A723008965A7 /* ServiceManagement.framework */,
+				BEAF1D6F1777A70D008965A7 /* Security.framework */,
+				BEAF1D4D17776D79008965A7 /* Cocoa.framework */,
+				BEF8F43C17853426003D9BA7 /* Foundation.framework */,
+				BEAF1D4F17776D79008965A7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEAF1D4F17776D79008965A7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEAF1D5017776D79008965A7 /* AppKit.framework */,
+				BEAF1D5117776D79008965A7 /* CoreData.framework */,
+				BEAF1D5217776D79008965A7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BEAF1D5317776D79008965A7 /* The Missing Radius */ = {
+			isa = PBXGroup;
+			children = (
+				BEAF1D5F17776D79008965A7 /* TheMissingRadiusDelegate.h */,
+				BEAF1D6017776D79008965A7 /* TheMissingRadiusDelegate.m */,
+				BEAF1D6A1777A5C4008965A7 /* TheMissingRadiusController.h */,
+				BEAF1D6B1777A5C4008965A7 /* TheMissingRadiusController.m */,
+				BEAF1D6217776D79008965A7 /* MainMenu.xib */,
+				BEAF1D5417776D79008965A7 /* Supporting Files */,
+			);
+			path = "The Missing Radius";
+			sourceTree = "<group>";
+		};
+		BEAF1D5417776D79008965A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEAF1D5917776D79008965A7 /* main.m */,
+				BEAF1D5517776D79008965A7 /* The Missing Radius-Info.plist */,
+				BEAF1D5617776D79008965A7 /* InfoPlist.strings */,
+				BEAF1D5B17776D79008965A7 /* The Missing Radius-Prefix.pch */,
+				BEAF1D5C17776D79008965A7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BECF5FE0178DE8F300712D96 /* Shared Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BECF5FDF178DE8B200712D96 /* Interfaces.h */,
+			);
+			name = "Shared Sources";
+			path = TheMissingRadiusHelper;
+			sourceTree = "<group>";
+		};
+		BEF8F45E1785A971003D9BA7 /* TheMissingRadiusHelper */ = {
+			isa = PBXGroup;
+			children = (
+				BECF5FDC178DE89700712D96 /* TheMissingRadiusHelper.h */,
+				BECF5FDD178DE89700712D96 /* TheMissingRadiusHelper.m */,
+				BEF8F4611785A971003D9BA7 /* Supporting Files */,
+			);
+			path = TheMissingRadiusHelper;
+			sourceTree = "<group>";
+		};
+		BEF8F4611785A971003D9BA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEAF1D801778B0F7008965A7 /* TheMissingRadiusHelper-Info.plist */,
+				BEAF1D811778B0F7008965A7 /* TheMissingRadiusHelper-Launchd.plist */,
+				BEF8F45F1785A971003D9BA7 /* main.m */,
+				BEF8F4621785A971003D9BA7 /* TheMissingRadiusHelper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEAF1D4917776D79008965A7 /* The Missing Radius */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEAF1D6717776D79008965A7 /* Build configuration list for PBXNativeTarget "The Missing Radius" */;
+			buildPhases = (
+				BEAF1D4617776D79008965A7 /* Sources */,
+				BEAF1D4717776D79008965A7 /* Frameworks */,
+				BEAF1D4817776D79008965A7 /* Resources */,
+				BEAF1D821778B74A008965A7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BECF5FE2178DFC7C00712D96 /* PBXTargetDependency */,
+			);
+			name = "The Missing Radius";
+			productName = "The Missing Radius";
+			productReference = BEAF1D4A17776D79008965A7 /* The Missing Radius.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEF8F45B1785A971003D9BA7 /* TheMissingRadiusHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF8F4651785A971003D9BA7 /* Build configuration list for PBXNativeTarget "TheMissingRadiusHelper" */;
+			buildPhases = (
+				BEF8F4581785A971003D9BA7 /* Sources */,
+				BEF8F4591785A971003D9BA7 /* Frameworks */,
+				BEF8F45A1785A971003D9BA7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheMissingRadiusHelper;
+			productName = TheMissingRadiusHelper;
+			productReference = BEF8F45C1785A971003D9BA7 /* com.aapps.TheMissingRadiusHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEAF1D4217776D79008965A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = aapps;
+			};
+			buildConfigurationList = BEAF1D4517776D79008965A7 /* Build configuration list for PBXProject "The Missing Radius" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BEAF1D4117776D79008965A7;
+			productRefGroup = BEAF1D4B17776D79008965A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEAF1D4917776D79008965A7 /* The Missing Radius */,
+				BEF8F45B1785A971003D9BA7 /* TheMissingRadiusHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEAF1D4817776D79008965A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAF1D5817776D79008965A7 /* InfoPlist.strings in Resources */,
+				BEAF1D5E17776D79008965A7 /* Credits.rtf in Resources */,
+				BEAF1D6417776D79008965A7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEAF1D4617776D79008965A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAF1D5A17776D79008965A7 /* main.m in Sources */,
+				BEAF1D6117776D79008965A7 /* TheMissingRadiusDelegate.m in Sources */,
+				BEAF1D6C1777A5C4008965A7 /* TheMissingRadiusController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF8F4581785A971003D9BA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF8F4601785A971003D9BA7 /* main.m in Sources */,
+				BECF5FDE178DE89700712D96 /* TheMissingRadiusHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BECF5FE2178DFC7C00712D96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEF8F45B1785A971003D9BA7 /* TheMissingRadiusHelper */;
+			targetProxy = BECF5FE1178DFC7C00712D96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEAF1D5617776D79008965A7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEAF1D5717776D79008965A7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BEAF1D5C17776D79008965A7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEAF1D5D17776D79008965A7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		BEAF1D6217776D79008965A7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEAF1D6317776D79008965A7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEAF1D6517776D79008965A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BEAF1D6617776D79008965A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BEAF1D6817776D79008965A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "The Missing Radius/The Missing Radius-Prefix.pch";
+				INFOPLIST_FILE = "The Missing Radius/The Missing Radius-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BEAF1D6917776D79008965A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "The Missing Radius/The Missing Radius-Prefix.pch";
+				INFOPLIST_FILE = "The Missing Radius/The Missing Radius-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BEF8F4661785A971003D9BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheMissingRadiusHelper/TheMissingRadiusHelper-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				INFOPLIST_FILE = "TheMissingRadiusHelper/TheMissingRadiusHelper-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"TheMissingRadiusHelper/TheMissingRadiusHelper-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"TheMissingRadiusHelper/TheMissingRadiusHelper-Launchd.plist",
+				);
+				PRODUCT_NAME = com.aapps.TheMissingRadiusHelper;
+				PROVISIONING_PROFILE = "";
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		BEF8F4671785A971003D9BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheMissingRadiusHelper/TheMissingRadiusHelper-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				INFOPLIST_FILE = "TheMissingRadiusHelper/TheMissingRadiusHelper-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"TheMissingRadiusHelper/TheMissingRadiusHelper-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"TheMissingRadiusHelper/TheMissingRadiusHelper-Launchd.plist",
+				);
+				PRODUCT_NAME = com.aapps.TheMissingRadiusHelper;
+				PROVISIONING_PROFILE = "";
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEAF1D4517776D79008965A7 /* Build configuration list for PBXProject "The Missing Radius" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAF1D6517776D79008965A7 /* Debug */,
+				BEAF1D6617776D79008965A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEAF1D6717776D79008965A7 /* Build configuration list for PBXNativeTarget "The Missing Radius" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAF1D6817776D79008965A7 /* Debug */,
+				BEAF1D6917776D79008965A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEF8F4651785A971003D9BA7 /* Build configuration list for PBXNativeTarget "TheMissingRadiusHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF8F4661785A971003D9BA7 /* Debug */,
+				BEF8F4671785A971003D9BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEAF1D4217776D79008965A7 /* Project object */;
+}
